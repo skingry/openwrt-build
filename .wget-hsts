@@ -1,0 +1,8 @@
+# HSTS 1.0 Known Hosts database for GNU Wget.
+# Edit at your own risk.
+# <hostname>	<port>	<incl. subdomains>	<created>	<max-age>
+fossies.org	0	0	1646287955	31536000
+cdn.kernel.org	0	0	1646288273	15768001
+alpha.gnu.org	0	0	1646289361	63072000
+github.com	0	1	1646290966	31536000
+codeload.github.com	0	0	1646287234	31536000
