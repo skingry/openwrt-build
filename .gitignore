@@ -1,2 +1,9 @@
 .bash_history
+.subversion
+.sudo_as_admin_successful
+.viminfo
+.wget-hsts
+
+configs/
+configs.tgz
 openwrt/
