@@ -16,6 +16,7 @@ RUN apt-get update && \
       git \
       java-propose-classpath \
       libelf-dev \
+      libip4tc-dev \
       libncurses5-dev \
       libncursesw5-dev \
       libssl-dev \
