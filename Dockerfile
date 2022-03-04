@@ -30,6 +30,7 @@ RUN apt-get update && \
       swig \
       time \
       unzip \
+      vim \
       wget \
       xsltproc \
       zlib1g-dev && \
