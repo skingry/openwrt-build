@@ -20,7 +20,6 @@ RUN apt-get update && \
       libncurses5-dev \
       libncursesw5-dev \
       libssl-dev \
-      python \
       python2.7-dev \
       python3 \
       python3-distutils \
