@@ -4,25 +4,24 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && \
     apt-get install -y \
+      bison \
       build-essential \
-      ccache \
+      clang \
       curl \
-      ecj \
-      fastjar \
       file \
+      flex \
       g++ \
+      g++-multilib \
       gawk \
+      gcc-multilib \
       gettext \
       git \
-      java-propose-classpath \
-      libelf-dev \
-      libip4tc-dev \
+      libpcre3 \
+      libpcre3-dev \
       libncurses5-dev \
-      libncursesw5-dev \
       libssl-dev \
-      python2.7-dev \
-      python3 \
-      python3-distutils \
+      python3-click \
+      python3-click-log \
       python3-setuptools \
       rsync \
       subversion \
@@ -32,7 +31,6 @@ RUN apt-get update && \
       unzip \
       vim \
       wget \
-      xsltproc \
       zlib1g-dev && \
     apt-get clean && \
     useradd -m openwrt-build && \
