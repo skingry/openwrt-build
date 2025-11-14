@@ -2,16 +2,16 @@
 
 DEVICE=$1
 
-cd openwrt
+if [ -d "configs/$DEVICE" ]; then
+  cd openwrt
 
-if [ -L ".config" ]; then
-  rm -rf .config
+  if [ -L ".config" ]; then
+    rm -rf .config
+    ln -s ../configs/$DEVICE/device-config .config
+  fi
+
+  if [ -L "files" ]; then
+    rm -rf files
+    ln -s ../configs/$DEVICE/files files
+  fi
 fi
-
-ln -s ../configs/$DEVICE/device-config .config
-
-if [ -L "files" ]; then
-  rm -rf files
-fi
-
-ln -s ../configs/$DEVICE/files files
