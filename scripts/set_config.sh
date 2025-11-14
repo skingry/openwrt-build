@@ -5,13 +5,9 @@ DEVICE=$1
 if [ -d "configs/$DEVICE" ]; then
   cd openwrt
 
-  if [ -L ".config" ]; then
-    rm -rf .config
-    ln -s ../configs/$DEVICE/device-config .config
-  fi
+  rm -rf .config
+  ln -s ../configs/$DEVICE/device-config .config
 
-  if [ -L "files" ]; then
-    rm -rf files
-    ln -s ../configs/$DEVICE/files files
-  fi
+  rm -rf files
+  ln -s ../configs/$DEVICE/files files
 fi

@@ -1,7 +1,7 @@
 #!/bin/bash
 
-openssl aes-256-cbc -d -a -pbkdf2 -in configs.tgz.enc -out configs.tgz
-tar -xvzf configs.tgz
+openssl enc -d -aes-256-cbc -in configs.tgz.enc -out configs.tgz
+tar -xzf configs.tgz
 rm -rf configs.tgz
 
 git clone https://github.com/openwrt/openwrt.git
